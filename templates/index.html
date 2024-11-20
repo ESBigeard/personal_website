@@ -1,0 +1,51 @@
+
+{% extends 'base_template.html' %}
+
+
+{% block content %}
+
+
+<div style="margin-left:20px;margin-right:20px;"><div style="float:right;"><img src="static/photo.jpg" style="margin:15px;width:250px;"></div>
+<div style="text-align:justify;">
+
+{%if session["language"]=="fr"%}
+
+	<p>Je suis post-doc en traitement automatique des langues (TAL/NLP). Mon domaine est la fouille de données et la création de resources linguistiques, principalement pour les langues des signes. Ma principale production est le <a href="https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/index.html">Multilingual Sign Language Wordnet</a>. Cette resource contient 11 000 signes dans 8 langues des signes européennes, alignés sur des synsets de <a href="https://omwn.org">Open Multilingual Wordnet</a>.
+	</p><p>
+
+	Je suis affilié à <a href="https://www.inria.fr/fr/centre-inria-universite-lorraine">INRIA Lorraine</a> en tant qu'ingénieur chef de projet pour le <a href="https://colaf.huma-num.fr">défi COLaF</a>. L'objectif du projet est de collecter des données et proposer des outils pour traiter les langues de France et variations du français.
+	</p><p>
+
+	<ul>
+	<li><a href="https://orcid.org/0000-0002-8354-1552">Orcid ID</a>
+	<li><a href="https://www.linkedin.com/in/sam-bigeard-b42aa78a/">LinkedIn</a>
+	<li><a href="https://github.com/ESBigeard">Github</a>
+	</ul>
+
+	<p>
+	Vous pouvez me contacter à sam point bigeard at inria point fr. Vous pouvez m'y envoyer des images de lamas pour créer un monde meilleur.
+	</p>
+
+
+{%else%}
+
+	<p>
+	I'm a post-doc in natural language processing (NLP). I do data mining to create language resources, mainly for sign languages. My most significant work is the <a href="https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/index.html">Multilingual Sign Language Wordnet</a>. It contains over 11 000 signs in 8 different sign languages of Europe aligned with synsets IDs from <a href="https://omwn.org">the Open Multilingual Wordnet</a>.
+	</p><p>
+
+	I currently work for <a href="https://www.inria.fr/fr/centre-inria-universite-lorraine">INRIA Lorraine</a> where I'm project manager for <a href="https://colaf.huma-num.fr">COLaF project</a>. Our goal is to collect datasets and develop tools for languages of France and variations of French.
+	</p>
+
+	<ul>
+	<li><a href="https://orcid.org/0000-0002-8354-1552">Orcid ID</a>
+	<li><a href="https://www.linkedin.com/in/sam-bigeard-b42aa78a">LinkedIn</a>
+	<li><a href="https://github.com/ESBigeard">Github</a>
+	</ul>
+
+	<p>
+	You can contact me at sam dot bigeard at inria dot fr. Send me llama pictures to make the world a better place.
+	</p>
+
+{%endif%}
+</div>
+{% endblock %}

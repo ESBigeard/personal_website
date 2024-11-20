@@ -1,0 +1,196 @@
+
+{% extends 'base_template.html' %}
+{% block content %}
+
+<div style="text-align:justify;">
+
+{%if session["language"]=="fr"%}
+
+<h2>Ressources</h2>
+<dl>
+
+<dt><a href="https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/">Le Wordnet Multilingue des Langues des Signes</a>
+<dd>Comporte 11 000 signs dans 8 langues des signes européennes, alignés avec les synsets du <a href="https://omwn.org">Open Multilingual Wordnet</a>. Les données peuvent être consultées en ligne, et téléchargées au format CSV.
+
+<dt>Lexique de noms de troubles et maladies
+<dd>Liste de noms français, y compris noms vernaculaires, pour des troubles, maladies, etc. Chaque nom est accompagné de son code CIM-10 et de la ressource dont il est extrait (Wikidata, Jeux de Mots ou Lexique.org). La façon dont ont été créées ces ressources est détaillée dans <a href="static/papers/taln2017_paper.pdf">ce papier</a>. Le fichier est en UTF-8. Les entrées Wikidata sont lemmatisées avec Treetagger, les entrées Jeux de Mots et Lexique.org ne sont pas lemmatisées. Le fichier comporte des doublons.<br>
+<a href="static/resources/disorders_list.txt">télécharger la ressource</a><br>
+Les données proviennent de <a href="http://wikidata.org/">Wikidata</a>, <a href="http://www.jeuxdemots.org/jdm-accueil.php">Jeux de Mots</a> et <a href="http://lexique.org/">Lexique.org</a>.
+</dl>
+
+<h2>Expérience Professionnelle</h2>
+<dl>
+<dt>Postoc : Ingénieur chef de projet en TAL
+<dd>Décembre 2023 - présent<br>
+Employeur : INRIA Université de Lorraine
+
+
+<dt>Postdoc : Ingénieur en TAL
+<dd>Février 2021 - 2024<br>
+Employeur : Laboratoire IDGS, Université de Hambourg, Allemagne
+
+<dt>Postdoc : Ingénieur de recherches en TAL
+<dd>Février 2020 - Janvier 2021<br>
+Employeur : IECL Nancy
+
+<dt>Ingénieur d'étude en TAL
+<dd>Avril 2018 - Octobre 2019<br>
+Employeur : CNRS. Localisé au LIMSI, Université Paris Sud.
+
+<dt>Ingénieur d'étude en TAL
+<dd>Juin 2016 - Mars 2018<br>
+Employeur :  Université de Bordeaux
+
+<dt>Stage de fin de master
+<dd>Mai 2015 - Octobre 2015<br>
+Employeur : Direction Générale des Hôpitaux de Bordeaux<br>
+Développement d'un outil d'anonymisation des dossiers médicaux qui conserve la lisibilité et la cohérence du dossier sur la durée
+
+<dt>Stage
+<dd>Juin 2015 - Août 2014<br>
+Employeur : CNRS<br>
+Développement d'un outil d'extraction automatique des données numériques sur corpus médical. Travail dans le cadre du projet Ravel sous la direction de Natalia Grabar. Outil utilisant principalement les CRF via l'outil Wapiti (développé par le LIMSI).
+</dl>
+
+<h2>Études</h2>
+<dl>
+<dt>Doctorat en Traitement Automatique des Langues
+<dd>Juin 2016 - Octobre 2019<br>
+Au sein de l'Université de Lille<br>
+Titre de la thèse : Détection et analyse de la non-adhérence médicamenteuse dans les réseaux sociaux
+Il s'agit d'une thèse de linguistique (section 7) dans les domaines du TAL, de la fouille de texte et de l'apprentissage automatique. L'objectif est d'identition comment et pourquoi les personnes se retrouvent en situation de non-adhérence. Plus d'informations sur la page thèse.
+
+<dt>Master de Traitement Automatique des Langues
+<dd> 2013-2015<br>
+Première année auprès de l'Université Sorbonne Nouvelle (Paris), deuxième année à l'INALCO (Paris). Ce master est co-géré par trois universités, ce qui explique le changement d'université à mi-parcours. Il s'agit toujours de la même formation.
+
+<dt>Licence de Linguistique
+<dd>2010-2013<br>
+Auprès de l'Université Sorbonne Nouvelle (Paris). Mineure TAL.
+</dl>
+
+<h2>Enseignement</h2>
+J'ai donné un cours de 3 heures introduisant le TAL à des étudiants en master informatique médicale. <a href="static/cours_tal.pdf">Présentation disponible ici</a>
+
+<h2>Activités de médiation</h2>
+<dl>
+<dt><a href="https://www.inria.fr/fr/lancement-du-programme-1-scientifique-1-classe-chiche">Dispositif Chiche</a> : Intervention dans des classes de seconde pour présenter le métier de chercheur et les métiers du numérique
+	<dd>2 interventions en 2024
+<dt><a href="https://pintofscience.fr/">Pint of Science</a> : Intervention dans un bar pour expliquer un sujet scientifique au grand public. 
+	<dd>Intervention 2024 : Pourquoi mon téléphone comprend le français mais pas l'alsacien? <a href="static/Pint of Science.pdf">Présentation</a>
+</dl>
+
+<h2>Langues</h2>
+<ul>
+<li>Français : langue première
+<li>Anglais : niveau C1, parlé couramment, certification CLES3
+<li>Langue des Signes Française : niveau A1.4 compétence basique de tous les jours
+<li>Allemand : compétence basique de tous les jours
+<li>Russe : notions, étudié pendant 3 ans au lycée
+<li>Chinois Mandarin : notions, étudié brièvement à la fac
+<li>Japonais : notions
+</ul>
+
+<h2>Programmation</h2>
+<p><a href="https://github.com/ESBigeard">Voir ma page Github</a></p>
+
+<h2>Personnel</h2>
+
+<p>Je <a href="static/automne.jpg">peins</a>, fais de la couture et du roller. Mes pronoms sont iel/il.</p>
+
+
+{%else%}
+
+<h2>Resources</h2>
+<dl>
+<dt><a href="https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/">The Multilingual Sign Language Wordnet</a>
+<dd>Contains 11 000 signs in 8 different sign languages of Europe aligned with synsets IDs from <a href="https://omwn.org">the Open Multilingual Wordnet</a>. It can be browsed online, and data can be downloaded in CSV format.
+
+<dt>Lexicon of french disorders names<br>
+<dd>Resource in French. List of disorder names, including layman names. More informations on the French page.<br>
+<a href="static/resources/disorders_list.txt">resource file</a>
+</dl>
+
+<h2>Employment</h2>
+<dl>
+<dt>Postdoc : Project manager in Natural Language Processing
+<dd>December 2023 - present<br>
+At INRIA Université de Lorraine, France
+
+<dt>Postdoc : Engineer in Natural Language Processing
+<dd>February 2021 - October 2023<br>
+At IDGS laboratory, Universität Hamburg, Germany
+
+<dt>Postdoc : Engineer in Natural Language Processing
+<dd>February 2020 - January 2021<br>
+At IECL Nancy, France
+
+<dt>Engineer in Natural Language Processing
+<dd>April 2018 - October 2019<br>
+At CNRS (French national research agency) and working at LIMSI laboratory, Université Paris Sud, France
+
+<dt>Engineer in Natural Language Processing
+<dd>June 2016 - March 2018<br>
+At Université de Bordeaux, France
+
+<dt>Internship
+<dd>May 2015 - October 2015<br>
+At General management of Bordeaux hospitals, France<br>
+Development of a tool to anonymize health records while keeping readability and timeline consistency
+
+<dt>Internship
+<dd>June 2015 - August 2014<br>
+At CNRS<br>
+Development of a data extraction tool for numerical data in medical files. Work done for project RAVEL under Natalia Grabar. The tool mainly used CRF with the Wapiti tool from LIMSI laboratory.
+</dl>
+
+<h2>Education</h2>
+<dl>
+<dt>PhD in Natural Language Processing
+<dd>June 2016 - October 2019
+At Université de Lille, France<br>
+Thesis title : Detection and analysis of drug non compliance in social media<br>
+It's a thesis in Natural Language Processing, Text mining and Machine learning. The goal is to identify how and why people find themselves in non compliance situations from the informations they share on social media. More informations on the Thesis page.
+
+<dt>Master's degree in Natural Language Processing
+<dd> 2013-2015<br>
+First year at Université Sorbonne Nouvelle (Paris, France, part of Sorbonne Universités), second year at INALCO (Paris, France). This degree is co-organized between three different universities, which is why I changed universities between first and second year. It's still the same degree.
+
+<dt>Bachelor in Linguistics
+<dd>2010-2013<br>
+At Université Sorbonne Nouvelle with a minor in NLP
+</dl>
+
+<h2>Teaching</h2>
+I taught a 3 hours introductory course in NLP to medical informatics master students. <a href="static/cours_tal.pdf">Slides here</a>
+
+<h2>Communication activites</h2>
+<dl>
+<dt>Chiche : Presentations to high schoolers about research and computer science jobs
+	<dd>2 events in 2024.
+<dt><a href="https://pintofscience.com/">Pint of Science</a> : Presentation in a pub to explain a science topic to the general public
+	<dd>2024 presentation : Why does my phone understand French but not Alsacian? <a href="static/Pint of Science.pdf">Presentation in French</a>
+</dl>
+
+<h2>Languages</h2>
+<ul>
+<li>French : native
+<li>English : C1 level, fluent, CLES3 certification
+<li>French Sign Language : A1.4 basic every-day proficiency
+<li>German : basic every-day proficiency
+<li>Russian : notions, studied for 3 years in high school
+<li>Mandarin Chinese : notions, studied briefly in college
+<li>Japanese : notions
+</ul>
+
+<h2>Programming</h2>
+<a href="https://github.com/ESBigeard">See my github</a>
+
+<h2>Personal life</h2>
+
+I <a href="static/automne.jpg">paint</a>, sew and roller-skate. My pronouns are them/him.
+
+
+{%endif%}
+</div>
+{% endblock %}

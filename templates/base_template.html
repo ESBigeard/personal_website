@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+	<script src="static/js/script.js"></script>
+    <title>Sam Bigeard</title>
+</head>
+<body>
+
+	<div id="language-switch">
+		<form method="get">
+		<p {%if session["language"]=="fr"%} class="selected" {%endif%} >
+		<button type="submit" id="french_button" name="language" value="fr"><img src="static/french.ico" width="30px" alt="passer en français" ></img></button><br>
+		<p {%if session["language"]=="en"%} class="selected" {%endif%} >
+		<button type="submit" id="english_button" name="language" value="en"><img src="static/english.png" width="30px" alt="switch to english" ></img></button><br>
+		</p>
+		</form>
+	</div>
+
+
+	<h1>Sam Bigeard</h1>
+	
+
+	<div id="menu-wrapper"><p>
+		<a href="index.html" {%if current_page=="index" %} class="menu_current" {%endif%} >
+			{%if session["language"]=="fr" %}
+				Accueil
+			{%else%}
+				Home
+			{%endif%}
+		</a> - 
+		<a href="publications.html" {%if current_page=="publications" %} class="menu_current" {%endif%} >
+			{%if session["language"]=="fr" %}
+				Publications
+			{%else%}
+				Publications
+			{%endif%}
+		</a> - 
+		<a href="thesis.html" {%if current_page=="thesis" %} class="menu_current" {%endif%} >
+			{%if session["language"]=="fr" %}
+				Thèse
+			{%else%}
+				PhD
+			{%endif%}
+		</a> - 
+		<a href="more.html" {%if current_page=="more" %} class="menu_current" {%endif%} >
+			{%if session["language"]=="fr" %}
+				Plus
+			{%else%}
+				More
+			{%endif%}
+		</a>
+	</div>
+
+	<div id="main-wrapper">
+	{% block content %} {% endblock %}
+	</div>
+
+</body>
+</html>
